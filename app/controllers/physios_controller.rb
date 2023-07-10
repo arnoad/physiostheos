@@ -1,0 +1,2 @@
+class PhysiosController < ApplicationController
+end
