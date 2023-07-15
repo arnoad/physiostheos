@@ -1,0 +1,7 @@
+<div class="m-5"><h1>Présentation de l'équipe!</h1>
+  <% @physios.each do |physio| %>
+    <h3><%= physio.lastname %>, <%= physio.firstname %></h3>
+    <p>Spécialisation: <%= physio.specialty %></p>
+    <p><%= physio.firstname %> en quelques mots: <%= physio.bio %></p>
+  <% end %>
+</div>
