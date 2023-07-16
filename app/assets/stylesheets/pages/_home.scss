@@ -1,1 +1,24 @@
 // Specific CSS for your home-page
+
+.homepage-text {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 40px;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 120px;
+}
+
+.banner-content img {
+  position: relative;
+  left: 25px;
+}
+
+.banner {
+  height: 540px;
+}
