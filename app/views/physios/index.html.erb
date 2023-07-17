@@ -1,13 +1,16 @@
 <div class="m-5">
-  <h1>Présentation de l'équipe!</h1>
+  <h1 style="font-family: 'Raleway', sans-serif;">Présentation de l'équipe!</h1>
+  <div class="physios-index-container">
   <% @physios.each do |physio| %>
-  <div class="card-product">
-    <img src="https://i.stack.imgur.com/34AD2.jpg" />
-    <div class="card-product-infos">
-      <h2><%= physio.firstname %> <%= physio.lastname %></h2>
-      <p><%= physio.specialty %></p>
-      <p><i class="fa-solid fa-phone"></i>   <%= physio.phone %>              <i class="fa-solid fa-envelope"></i>   <%= physio.email %></p>
+    <div class="card-product">
+      <img src="https://i.stack.imgur.com/34AD2.jpg" />
+      <div class="card-product-infos">
+        <h2><%= physio.firstname %> <%= physio.lastname %></h2>
+        <p><%= physio.specialty %></p>
+        <p><i class="fa-solid fa-phone"></i> <%= physio.phone %></p>
+        <p><i class="fa-solid fa-envelope"></i>   <%= physio.email %></p>
+      </div>
     </div>
-  </div>
   <% end %>
+  </div>
 </div>

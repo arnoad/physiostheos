@@ -1,31 +1,39 @@
+.physios-index-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+
 .card-product {
   overflow: hidden;
-  height: 120px;
+  height: 150px;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
-  margin: 30px;
-  border-radius: 60px;
-  width: 740px;
+  margin: 22px;
+  border-radius: 75px;
+  width: 560px;
   align-items: center;
+  background-color: rgba(64, 224, 208, 0.1);
 }
+
 
 .card-product img {
   height: 100%;
-  width: 120px;
+  width: 150px;
   object-fit: cover;
-  border-radius: 60px;
+  border-radius: 75px;
 }
 
 .card-product h2 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   margin: 0;
   font-family: $body-font;
 }
 
 .card-product p {
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
