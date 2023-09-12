@@ -1,0 +1,13 @@
+<div class="m-3">
+  <h1>Prenez rendez-vous !</h1>
+  <%= simple_form_for [@physio, @rdv] do |f| %>
+    <%# if @request.errors.any? %>
+      <%# @request.errors.full_messages %>
+    <%# end %>
+    <%= f.input :date, order:  [:day, :month, :year] %>
+    <%#= f.input :physio %>
+    <%#= f.input :phone %>
+    <%#= f.innput :email %>
+    <%= f.submit "Confirmer", class: "btn-flat", style: "border: none;" %>
+  <% end %>
+</div>
