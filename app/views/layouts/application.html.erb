@@ -11,8 +11,14 @@
   </head>
 
   <body style="background-color: white;">
-  <%= render "shared/navbar" %>
-    <%= yield %>
-  <%= render "shared/footer" %>
+    <div class="navbar-wrapper">
+      <%= render "shared/navbar" %>
+    </div>
+    <div class="body-wrapper">
+      <%= yield %>
+    </div>
+    <div class="footer-wrapper">
+      <%= render "shared/footer" %>
+    </div>
   </body>
 </html>
