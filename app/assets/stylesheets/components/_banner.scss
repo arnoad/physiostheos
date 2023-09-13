@@ -1,11 +1,17 @@
-.banner {
-  background-size: cover;
-  background-position: center;
-  padding: 150px 0;
-  height: 100vh; //not working because Bootstrap
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-.banner h1 {
+.banner-video {
+  background-size: cover;
+  background-position: center;
+  // padding: 150px 0;
+  height: 100vh;
+}
+
+.banner-video h1 {
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -14,7 +20,7 @@
   font-family: $body-font;
 }
 
-.banner p {
+.banner-video p {
   font-size: 20px;
   color: white;
   opacity: .7;
