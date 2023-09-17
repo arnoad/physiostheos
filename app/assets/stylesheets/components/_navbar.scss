@@ -4,8 +4,17 @@
   left: 0;
   right: 0;
   justify-content: space-between;
-  background: transparent; /* Set the background to transparent */
+  background-color: $navbar-color; /* Set the background to transparent */
   z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.navbar-lewagon {
+  /* Existing CSS properties */
+  transition: top 0.5s ease; /* Adjust the duration and timing function as needed */
+}
+
+.navbar-lewagon.opaque {
+  background-color: $navbar-color; /* Replace 'your-background-color' with the desired background color */
 }
 
 .navbar-lewagon .navbar-collapse {

@@ -1,9 +1,28 @@
-.kine {
-  height: 100vh;
-  width: 50vh;
+.nos-services {
+  display: flex;
+  height: 100vh; /* Take the full viewport height */
+  flex-direction: row; /* Split into two columns */
 }
 
+.kine,
 .osteo {
-  height: 100vh;
-  width: 50vh;
+  flex: 1; /* Make both columns equally sized */
+  padding: 85px; /* Add some padding for spacing */
+  border: 1px solid #ccc; /* Add borders for separation (optional) */
+  overflow: auto; /* Add scrollbars if content overflows */
+  display: flex; /* Use flexbox for column content */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.kine h1,
+.osteo h1 {
+  align-items: center;
+  font-family: $headers-font;
+}
+
+.kine p,
+.osteo p {
+  text-align: justify;
 }
