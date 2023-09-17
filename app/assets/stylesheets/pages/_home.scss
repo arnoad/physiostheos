@@ -26,3 +26,37 @@
 .physio_avatars {
   display: flex;
 }
+
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .banner-content img {
+    width: 100px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .banner-content img {
+    width: 400px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .banner-content img {
+    width: 600px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .banner-content img {
+    width: 600px;
+  }
+}

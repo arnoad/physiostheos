@@ -4,12 +4,6 @@ html, body {
   padding: 0;
 }
 
-.body-wrapper {
-  min-height: calc(100% - 700px); /* Adjust the footer height here */
-  padding-bottom: 700px; /* Adjust the footer height here */
-  box-sizing: border-box;
-}
-
 .footer-wrapper {
   background: #F4F4F4;
   height: 100px; /* Set the desired height for your footer */

@@ -1,0 +1,17 @@
+.div-contact h1 {
+  color: $dark-blue;
+  font-weight: 100;
+  font-size: 52px;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 40px;
+  margin-top: 100px;
+  top: 20px;
+  position: relative;
+}
+
+.div-contact-content {
+  margin: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
