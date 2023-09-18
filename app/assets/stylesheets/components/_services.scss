@@ -2,24 +2,34 @@
   display: flex;
   height: 100vh; /* Take the full viewport height */
   flex-direction: row; /* Split into two columns */
+  // background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://coachfrog-production-media.s3-eu-central-1.amazonaws.com/blog-photos/217/istock_000018030233_large.jpg.992x571_q85_crop_upscale.jpg");
+  // background-size: cover; /* Cover the entire container */
+  // background-repeat: no-repeat; /* Prevent repeating the image */
+  // background-position: center; /* Center the image */
 }
 
 .kine,
 .osteo {
   flex: 1; /* Make both columns equally sized */
-  padding: 85px; /* Add some padding for spacing */
-  border: 1px solid #ccc; /* Add borders for separation (optional) */
+  margin: 85px; /* Add some padding for spacing */
+  padding: 50px;
   overflow: auto; /* Add scrollbars if content overflows */
   display: flex; /* Use flexbox for column content */
   flex-direction: column; /* Stack content vertically */
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
+  background-color: white;
+  color: $eerie-black;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  backdrop-filter: blur(8px);
 }
 
 .kine h1,
 .osteo h1 {
   align-items: center;
   font-family: $headers-font;
+  color: $turquoise;
 }
 
 .kine p,

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Physiostheos</title>
+    <title>Physiosteos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,14 +12,8 @@
   </head>
 
   <body style="background-color: white;">
-    <%# <div class="navbar-wrapper"> %>
       <%= render "shared/navbar" %>
-    <%# </div> %>
-    <%# <div class="body-wrapper"> %>
       <%= yield %>
-    <%# </div> %>
-    <%# <div> %>
       <%= render "shared/footer" %>
-    <%# </div> %>
   </body>
 </html>

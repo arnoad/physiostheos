@@ -1,17 +1,22 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;800;900&family=Rubik&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;800;900&family=Rubik&display=swap');
 
 // Define fonts for body and headers
-$body-font: 'Raleway', sans-serif;
-$headers-font: "Nunito", "Helvetica", "sans-serif";
+// $body-font: 'Raleway', sans-serif;
+// $headers-font: "Nunito", "Helvetica", "sans-serif";
+// $headers-font: 'Raleway', sans-serif;
+
 
 // To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+@font-face {
+  font-family: "Raleway";
+  // src: font-url('FontFile.eot');
+  // src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
+  //      font-url('FontFile.woff') format('woff'),
+  src: font-url('Raleway-VariableFont_wght.ttf') format('truetype')
+       font-url('Raleway-Italic-VariableFont_wght.ttf') format('truetype')
+}
+// $my-font: "Raleway";
+$body-font: 'Raleway', sans-serif;
+$headers-font: 'Raleway', sans-serif;

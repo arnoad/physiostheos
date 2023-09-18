@@ -31,11 +31,13 @@
           <%= link_to "Home", root_path, class: "nav-link", style: "color: white;" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Services", "#", class: "nav-link", style: "color: white;" %>
-          <%# <button id="scroll-button", class="nav-link", style="border: none; background-color: transparent;">Services</button> %>
+          <%= link_to "Services", "#", class: "nav-link scroll-button1", style: "color: white;", data: { target: "target-services-section" } %>
         </li>
         <li class="nav-item">
-          <%= link_to "Contact", "#" , class: "nav-link", style: "color: white;" %>
+          <%= link_to "Equipe", "#", class: "nav-link scroll-button2", style: "color: white;", data: { target: "target-equipe-section" } %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Contact", "#" , class: "nav-link scroll-button3", style: "color: white;", data: { target: "target-contact-section" } %>
         </li>
         <%# <li class="nav-item"> %>
           <%#= link_to "Login", new_user_session_path, class: "nav-link", style: "margin-right: 10px;" %>

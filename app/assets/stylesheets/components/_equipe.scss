@@ -1,10 +1,20 @@
 .equipe {
   height: 100vh;
+  // background-color: $dark-blue;
+  // color: $mint-cream;
+}
+
+.equipe-all-members {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 16px;
+  margin: 85px;
 }
 
 .equipe h1 {
-  color: $dark-blue;
-  font-weight: 100;
+  color: $turquoise;
+  font-weight: 600;
   font-size: 52px;
   justify-content: center;
   display: flex;
@@ -16,8 +26,12 @@
 
 .membre {
   display: flex;
-  border: 2px solid #000000;
-  margin: 30px;
+  margin: 16px;
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  backdrop-filter: blur(8px);
 }
 
 .membre-content-description {
@@ -25,12 +39,13 @@
   font-style: italic;
 }
 
-.membre-content-titre {
-  font-size: 22px;
-
+.membre-content-titre h3{
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .avatar-equipe {
-  width: 180px;
+  width: 140px;
   border-radius: 50%;
+  padding: 10px;
 }
