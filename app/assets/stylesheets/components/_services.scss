@@ -1,6 +1,12 @@
-.nos-services {
+.nos-services h1 {
+ color: $dark-blue;
+ text-align: center;
+ padding-top: 100px;
+}
+
+.nos-services-content {
   display: flex;
-  height: 100vh; /* Take the full viewport height */
+  height: 85vh; /* Take the full viewport height */
   flex-direction: row; /* Split into two columns */
   // background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://coachfrog-production-media.s3-eu-central-1.amazonaws.com/blog-photos/217/istock_000018030233_large.jpg.992x571_q85_crop_upscale.jpg");
   // background-size: cover; /* Cover the entire container */
@@ -12,17 +18,26 @@
 .osteo {
   flex: 1; /* Make both columns equally sized */
   margin: 85px; /* Add some padding for spacing */
+  margin-top: 35px;
   padding: 50px;
   overflow: auto; /* Add scrollbars if content overflows */
   display: flex; /* Use flexbox for column content */
   flex-direction: column; /* Stack content vertically */
   align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
+  // justify-content: center; /* Center content horizontally */
   background-color: white;
   color: $eerie-black;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
+  border-radius: 10px;
   backdrop-filter: blur(8px);
+}
+
+.kine {
+  margin-right: 20px;
+}
+
+.osteo {
+  margin-left: 20px;
 }
 
 .kine h1,
@@ -30,9 +45,23 @@
   align-items: center;
   font-family: $headers-font;
   color: $turquoise;
+  padding-top: 0px;
+  padding-bottom: 15px;
 }
 
 .kine p,
 .osteo p {
   text-align: justify;
+}
+
+.kine-osteo-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.kine-osteo-content a {
+  text-align: center;
 }

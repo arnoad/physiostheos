@@ -4,6 +4,12 @@ class PhysiosController < ApplicationController
 
   def index
     @physios = Physio.all
+    @markers = @physios.geocoded.map do |physio|
+      {
+        lat: physio.latitude,
+        lng: physio.longitude
+      }
+    end
   end
 
   def show; end

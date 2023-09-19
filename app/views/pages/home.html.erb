@@ -10,37 +10,39 @@
 
 
 <%# CONTAINER "NOS SERVICES" %>
-
 <div class="nos-services", id="target-services-section">
-  <div class="kine">
+  <h1>NOS SERVICES</h1>
+  <div class="nos-services-content">
+    <div class="kine">
 
-    <h1>Kinésithérapie</h1>
-    <p>
-      La kinésithérapie est une discipline médicale essentielle axée sur la rééducation, la prévention et le traitement des troubles physiques. Elle repose sur l'utilisation de techniques manuelles et d'exercices thérapeutiques pour promouvoir la santé, soulager la douleur et rétablir la fonction corporelle optimale.
-      La kinésithérapie est utilisée pour traiter une vaste gamme de conditions médicales, y compris les blessures sportives, les douleurs au dos et au cou, les problèmes orthopédiques, les troubles neurologiques, la réadaptation post-opératoire et les affections respiratoires et cardiaques, etc. Elle joue également un rôle crucial dans la promotion de la mobilité et de la qualité de vie des personnes âgées.
-      Nos kinésithérapeutes sont des professionnels de la santé hautement qualifiés et travaillent en étroite collaboration avec les patients pour évaluer leurs besoins spécifiques et développer des plans de traitement personnalisés. Ces plans peuvent inclure des exercices de renforcement musculaire, des techniques de mobilisation articulaire, des massages thérapeutiques, des étirements, des conseils en fonction des besoins et demandes du patient.
-    </p>
-    <%= link_to "Vers l'équipe!", "#", class: "btn-flat scroll-button2", style: "text-decoration: none;", data: { target: "target-equipe-section" }%>
-  </div>
-  <div class="osteo">
-    <h1>Ostéo- étiopathie</h1>
-    <p>
-      L'ostéo-étiopathie est une approche médicale alternative qui se concentre sur la recherche et le traitement des causes profondes des troubles de santé, en particulier ceux liés aux douleurs musculo-squelettiques et aux dysfonctionnements viscéraux. Elle repose sur le concept que de petites lésions ou restrictions de mobilité dans les tissus corporels peuvent entraîner des problèmes de santé en perturbant la circulation sanguine, le système nerveux et d'autres processus physiologiques.
-      Nos ostéo-étiopathes effectuent des bilans approfondis pour identifier les tensions et les déséquilibres dans les tissus du corps. Ils cherchent à comprendre la cause sous-jacente des symptômes plutôt que de se concentrer uniquement sur le soulagement des symptômes. Le traitement comprend des techniques de manipulation à haute vélocité qui permettent de rétablir une mobilité articulaire optimale et ainsi équilibrer les tensions biomécaniques dans le corps entier pour favoriser la guérison. En effet, l'ostéo-étiopathie considère le corps comme un système interconnecté, où chaque partie influence les autres.
-    </p>
-    <%= link_to "Vers l'équipe!", "#", class: "btn-flat scroll-button2", style: "text-decoration: none;", data: { target: "target-equipe-section" }%>
+      <h1>Kinésithérapie</h1>
+      <div class="kine-osteo-content">
+        <p>
+          La kinésithérapie est une discipline médicale qui utilise des techniques manuelles et des exercices pour rééduquer, prévenir et traiter les problèmes physiques. Elle est utilisée pour diverses conditions médicales, notamment pour la réadaptation post-opératoire, les douleurs physiques, l’amélioration de la mobilité et la qualité de vie. Les kinésithérapeutes travaillent en étroite collaboration avec les patients pour développer des plans de traitement personnalisés.
+        </p>
+        <a href="#" class="btn-flat scroll-button2" style="text-decoration: none;" data-target="target-equipe-section">Vers l'équipe!</a>      </div>
+    </div>
+    <div class="osteo">
+      <h1>Ostéo-étiopathie</h1>
+      <div class="kine-osteo-content">
+        <p>
+          L'ostéo-étiopathie est une approche médicale alternative axée sur la recherche et le traitement des causes profondes des troubles de santé, principalement les douleurs et raideurs physiques et les dysfonctionnements viscéraux. Elle se base sur l'idée que de petites dysfonctions dans les tissus corporels peuvent provoquer des problèmes de santé en perturbant divers processus physiologiques. Les ostéo-étiopathes effectuent des bilans approfondis pour identifier les déséquilibres dans le corps, en cherchant à comprendre la cause sous-jacente des symptômes. Le traitement comprend des techniques de manipulation visant à rétablir la mobilité articulaire et tissulaire, équilibrant ainsi les tensions biomécaniques dans tout le corps pour favoriser la guérison, en considérant le corps comme un système interconnecté.
+        </p>
+        <a href="#" class="btn-flat scroll-button2" style="text-decoration: none;" data-target="target-equipe-section">Vers l'équipe!</a>      </div>
+      </div>
+    </div>
   </div>
 </div>
-
 
 <%# CONTAINER "NOTRE EQUIPE" %>
 
 <div class="equipe", id="target-equipe-section">
-  <h1>Notre équipe</h1>
+  <h1>NOTRE EQUIPE</h1>
   <div class="equipe-all-members">
+
     <div class="membre">
       <div class="profile-pic-membre">
-        <%= image_tag image_url("default_profile_pic.jpeg") , class: "avatar-equipe"%>
+        <%= image_tag image_url("cedric_profile.jpg") , class: "avatar-equipe"%>
       </div>
       <div class="membre-content">
         <div class="membre-content-titre">
@@ -48,15 +50,28 @@
           <h3>Kinésithérapeute & ostéo-éthiopathe D.Oe.</h3>
         </div>
         <div class="membre-content-description">
-          <p>
-            "Je suis praticien en kinésithérapie et ostéo-étiopathie. Je suis également certifié à la rééducation des articulations temporo-mandibulaires, qui affectent la mâchoire. Mon champ de compétence englobe divers domaines, notamment les sports collectifs, la rééducation sportive, ainsi que les maux de dos de manière générale. Mon parcours sportif a débuté dans le monde du football, où j'ai évolué jusqu’au niveau professionnel (KAS Eupen). Par la suite, j'ai fait une transition majeure vers les sports de combat et le yoga. Cette diversité d'expériences m’a permis d'acquérir une compréhension approfondie du fonctionnement du corps humain, ainsi qu’une expertise dans la gestion de douleurs, de blessures et la rééducation. "
+          <p id="partialText">
+            "Je suis praticien en kinésithérapie et ostéo-étiopathie. Je suis également certifié à la rééducation des articulations temporo-mandibulaires, qui affectent la mâchoire. Mon champ de compétence englobe divers domaines, notamment les sports collectifs, la rééducation sportive, ainsi que les maux de dos de manière générale.
           </p>
+          <button id="moreButton">Lire la suite</button>
+          <%= link_to "Prendre RDV", "#", class: "btn-flat scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
+        </div>
+        <!-- The hidden pop-up div -->
+        <div id="popup" class="popup">
+          <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <p id="fullText">
+              "Je suis praticien en kinésithérapie et ostéo-étiopathie. Je suis également certifié à la rééducation des articulations temporo-mandibulaires, qui affectent la mâchoire. Mon champ de compétence englobe divers domaines, notamment les sports collectifs, la rééducation sportive, ainsi que les maux de dos de manière générale. Mon parcours sportif a débuté dans le monde du football jusqu’au niveau professionnel. Par la suite, j'ai fait une transition majeure vers les sports de combat et le yoga. Cette diversité d'expériences m’a permis d'acquérir une compréhension approfondie du fonctionnement du corps humain, ainsi qu’une expertise dans la gestion de douleurs, de blessures et la rééducation.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-        <div class="membre">
+
+
+    <div class="membre">
       <div class="profile-pic-membre">
-        <%= image_tag image_url("default_profile_pic.jpeg") , class: "avatar-equipe"%>
+        <%= image_tag image_url("cedric_profile.jpg") , class: "avatar-equipe"%>
       </div>
       <div class="membre-content">
         <div class="membre-content-titre">
@@ -64,15 +79,28 @@
           <h3>Kinésithérapeute & ostéo-éthiopathe D.Oe.</h3>
         </div>
         <div class="membre-content-description">
-          <p>
-            "Je suis praticien en kinésithérapie et ostéo-étiopathie. Je suis également certifié à la rééducation des articulations temporo-mandibulaires, qui affectent la mâchoire. Mon champ de compétence englobe divers domaines, notamment les sports collectifs, la rééducation sportive, ainsi que les maux de dos de manière générale. Mon parcours sportif a débuté dans le monde du football, où j'ai évolué jusqu’au niveau professionnel (KAS Eupen). Par la suite, j'ai fait une transition majeure vers les sports de combat et le yoga. Cette diversité d'expériences m’a permis d'acquérir une compréhension approfondie du fonctionnement du corps humain, ainsi qu’une expertise dans la gestion de douleurs, de blessures et la rééducation. "
+          <p id="partialText">
+            "Je suis praticien en kinésithérapie et ostéo-étiopathie. Je suis également certifié à la rééducation des articulations temporo-mandibulaires, qui affectent la mâchoire. Mon champ de compétence englobe divers domaines, notamment les sports collectifs, la rééducation sportive, ainsi que les maux de dos de manière générale.
           </p>
+          <button id="moreButton">Lire la suite</button>
+          <%= link_to "Prendre RDV", "#", class: "btn-flat scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
+        </div>
+        <!-- The hidden pop-up div -->
+        <div id="popup" class="popup">
+          <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <p id="fullText">
+              "Je suis praticien en kinésithérapie et ostéo-étiopathie. Je suis également certifié à la rééducation des articulations temporo-mandibulaires, qui affectent la mâchoire. Mon champ de compétence englobe divers domaines, notamment les sports collectifs, la rééducation sportive, ainsi que les maux de dos de manière générale. Mon parcours sportif a débuté dans le monde du football jusqu’au niveau professionnel. Par la suite, j'ai fait une transition majeure vers les sports de combat et le yoga. Cette diversité d'expériences m’a permis d'acquérir une compréhension approfondie du fonctionnement du corps humain, ainsi qu’une expertise dans la gestion de douleurs, de blessures et la rééducation.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-        <div class="membre">
+
+
+    <div class="membre">
       <div class="profile-pic-membre">
-        <%= image_tag image_url("default_profile_pic.jpeg") , class: "avatar-equipe"%>
+        <%= image_tag image_url("cedric_profile.jpg") , class: "avatar-equipe"%>
       </div>
       <div class="membre-content">
         <div class="membre-content-titre">
@@ -80,15 +108,28 @@
           <h3>Kinésithérapeute & ostéo-éthiopathe D.Oe.</h3>
         </div>
         <div class="membre-content-description">
-          <p>
-            "Je suis praticien en kinésithérapie et ostéo-étiopathie. Je suis également certifié à la rééducation des articulations temporo-mandibulaires, qui affectent la mâchoire. Mon champ de compétence englobe divers domaines, notamment les sports collectifs, la rééducation sportive, ainsi que les maux de dos de manière générale. Mon parcours sportif a débuté dans le monde du football, où j'ai évolué jusqu’au niveau professionnel (KAS Eupen). Par la suite, j'ai fait une transition majeure vers les sports de combat et le yoga. Cette diversité d'expériences m’a permis d'acquérir une compréhension approfondie du fonctionnement du corps humain, ainsi qu’une expertise dans la gestion de douleurs, de blessures et la rééducation. "
+          <p id="partialText">
+            "Je suis praticien en kinésithérapie et ostéo-étiopathie. Je suis également certifié à la rééducation des articulations temporo-mandibulaires, qui affectent la mâchoire. Mon champ de compétence englobe divers domaines, notamment les sports collectifs, la rééducation sportive, ainsi que les maux de dos de manière générale.
           </p>
+          <button id="moreButton">Lire la suite</button>
+          <%= link_to "Prendre RDV", "#", class: "btn-flat scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
+        </div>
+        <!-- The hidden pop-up div -->
+        <div id="popup" class="popup">
+          <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <p id="fullText">
+              "Je suis praticien en kinésithérapie et ostéo-étiopathie. Je suis également certifié à la rééducation des articulations temporo-mandibulaires, qui affectent la mâchoire. Mon champ de compétence englobe divers domaines, notamment les sports collectifs, la rééducation sportive, ainsi que les maux de dos de manière générale. Mon parcours sportif a débuté dans le monde du football jusqu’au niveau professionnel. Par la suite, j'ai fait une transition majeure vers les sports de combat et le yoga. Cette diversité d'expériences m’a permis d'acquérir une compréhension approfondie du fonctionnement du corps humain, ainsi qu’une expertise dans la gestion de douleurs, de blessures et la rééducation.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-        <div class="membre">
+
+
+    <div class="membre">
       <div class="profile-pic-membre">
-        <%= image_tag image_url("default_profile_pic.jpeg") , class: "avatar-equipe"%>
+        <%= image_tag image_url("cedric_profile.jpg") , class: "avatar-equipe"%>
       </div>
       <div class="membre-content">
         <div class="membre-content-titre">
@@ -96,31 +137,46 @@
           <h3>Kinésithérapeute & ostéo-éthiopathe D.Oe.</h3>
         </div>
         <div class="membre-content-description">
-          <p>
-            "Je suis praticien en kinésithérapie et ostéo-étiopathie. Je suis également certifié à la rééducation des articulations temporo-mandibulaires, qui affectent la mâchoire. Mon champ de compétence englobe divers domaines, notamment les sports collectifs, la rééducation sportive, ainsi que les maux de dos de manière générale. Mon parcours sportif a débuté dans le monde du football, où j'ai évolué jusqu’au niveau professionnel (KAS Eupen). Par la suite, j'ai fait une transition majeure vers les sports de combat et le yoga. Cette diversité d'expériences m’a permis d'acquérir une compréhension approfondie du fonctionnement du corps humain, ainsi qu’une expertise dans la gestion de douleurs, de blessures et la rééducation. "
+          <p id="partialText">
+            "Je suis praticien en kinésithérapie et ostéo-étiopathie. Je suis également certifié à la rééducation des articulations temporo-mandibulaires, qui affectent la mâchoire. Mon champ de compétence englobe divers domaines, notamment les sports collectifs, la rééducation sportive, ainsi que les maux de dos de manière générale.
           </p>
+          <button id="moreButton">Lire la suite</button>
+          <%= link_to "Prendre RDV", "#", class: "btn-flat scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
+        </div>
+        <!-- The hidden pop-up div -->
+        <div id="popup" class="popup">
+          <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <p id="fullText">
+              "Je suis praticien en kinésithérapie et ostéo-étiopathie. Je suis également certifié à la rééducation des articulations temporo-mandibulaires, qui affectent la mâchoire. Mon champ de compétence englobe divers domaines, notamment les sports collectifs, la rééducation sportive, ainsi que les maux de dos de manière générale. Mon parcours sportif a débuté dans le monde du football jusqu’au niveau professionnel. Par la suite, j'ai fait une transition majeure vers les sports de combat et le yoga. Cette diversité d'expériences m’a permis d'acquérir une compréhension approfondie du fonctionnement du corps humain, ainsi qu’une expertise dans la gestion de douleurs, de blessures et la rééducation.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <%= link_to "Prendre RDV", "#", class: "btn-flat scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
 </div>
 
 
 <%# CONTAINER "CONTACT" %>
 
 <div class="div-contact", id="target-contact-section">
-  <h1>Comment nous contacter:</h1>
+  <h1>COMMENT NOUS CONTACTER ?</h1>
   <div class="div-contact-content">
     <div class="infos-contact">
       <h2>Nos coordonnées</h2>
+      <br>
       <p><i class="fa-solid fa-clock"></i> 9h - 18h (Lundi - Vendredi)</p>
-      <p><i class="fa-solid fa-location-dot"></i>Chaussée de Liège, 322B, B-5100 Jambes</p>
-      <p><i class="fa-solid fa-phone"> +32 81 00 00 00</i></p>
-      <p><i class="fa-solid fa-paper-plane"></i> info@physiosteos.com</p>
+      <p><i class="fa-solid fa-house"></i> Chaussée de Liège 322 b, 5100 Jambes</p>
+      <p><i class="fa-solid fa-phone"></i> +32 81 00 00 00</p>
+      <p><i class="fa-solid fa-envelope"></i></i> info@physiosteos.com</p>
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://maps.app.goo.gl/ZcJPfy4vVPVqTh116" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
+      </div>
     </div>
-    <div class="map-contact">
-      <%= image_tag image_url("map.png"), style: "width: 300px;" %>
+      <%= image_tag image_url("map.png"), style: "width: 500px;" %>
     </div>
   </div>
 </div>
@@ -198,4 +254,32 @@ window.addEventListener('scroll', () => {
     prevScrollPos = currentScrollPos;
 });
 
+</script>
+
+<%# SHOW MORE FUNCTIONALITY FOR EQUIPE %>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Your JavaScript code here
+
+
+// Get references to elements
+  const partialText = document.getElementById('partialText');
+  const fullText = document.getElementById('fullText');
+  const moreButton = document.getElementById('moreButton');
+  const popup = document.getElementById('popup');
+  const closePopup = document.getElementById('closePopup');
+
+  // Event listener for "more" button
+  moreButton.addEventListener('click', () => {
+    fullText.style.display = 'block';
+    popup.style.display = 'block';
+  });
+
+  // Event listener for closing the pop-up
+  closePopup.addEventListener('click', () => {
+    fullText.style.display = 'none';
+    popup.style.display = 'none';
+  });
+});
 </script>

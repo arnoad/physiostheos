@@ -6,12 +6,13 @@ html, body {
 
 .footer-wrapper {
   background: #F4F4F4;
-  height: 100px; /* Set the desired height for your footer */
+  height: 60px; /* Set the desired height for your footer */
   padding: 0 50px;
   color: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
 }
 
 /* Your existing footer styles */
@@ -30,6 +31,7 @@ html, body {
 
 .footer-links a:hover {
   opacity: 1;
+  color: $dark-blue;
 }
 
 .footer-wrapper .fa-heart {

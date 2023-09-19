@@ -1,6 +1,6 @@
 .div-contact h1 {
-  color: $turquoise;
-  font-weight: 600;
+  color: $dark-blue;
+  font-weight: 200;
   font-size: 52px;
   justify-content: center;
   display: flex;
@@ -10,8 +10,32 @@
   position: relative;
 }
 
+.div-contact {
+  min-height: 100vh;
+}
+
 .div-contact-content {
   margin: 100px;
   display: flex;
   justify-content: space-evenly;
+}
+
+.div-contact img {
+  border-radius: 10px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+}
+
+.infos-contact p i {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.infos-contact h1 {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.infos-contact {
+  padding: 30px;
+  padding-top: 100px;
+  font-size: 16px;
 }
