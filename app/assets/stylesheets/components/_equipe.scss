@@ -71,33 +71,36 @@
 
 .popup-content {
   background-color: white;
-  margin: 5% auto;
-  padding: 20px;
-  width: 95%;
+  margin: 1% auto;
+  padding: 24px;
+  width: 97%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   position: relative;
   font-family: $body-font;
   font-size: 13px;
+  font-style: italic;
 }
 
 .close {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px;
+  top: -3px;
+  right: 1px;
+  padding: 2px 10px;
   cursor: pointer;
+  color: gray;
+  font-size: 21px;
 }
 
 /* Style for the "more" button */
-#moreButton {
+.moreButton {
   background-color: transparent;
   color: $dark-blue;
   border: none;
-  padding: 10px 20px;
+  // padding: 10px 20px;
   cursor: pointer;
 }
 
-#moreButton:hover {
+.moreButton:hover {
   // background-color: #0056b3;
 }

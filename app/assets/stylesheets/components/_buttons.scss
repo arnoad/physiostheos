@@ -11,3 +11,19 @@
   background: $turquoise-hover;
   color: $mint-cream;
 }
+
+
+.btn-small {
+  color: $mint-cream;
+  padding: 4px 12px;
+  border-radius: 4px;
+  background: $turquoise;
+  font-size: 13px;
+  transition: 0.3s ease;
+  font-style: none;
+}
+
+.btn-small:hover {
+  background: $turquoise-hover;
+  color: $mint-cream;
+}
