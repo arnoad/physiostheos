@@ -32,6 +32,12 @@
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
   overflow: auto;
   backdrop-filter: blur(8px);
+  // height: 200px;
+}
+
+.member-content {
+  // height: 80px;
+  // position: absolute;
 }
 
 .membre-content-description {
@@ -64,12 +70,15 @@
 }
 
 .popup-content {
-  background-color: #fff;
-  margin: 15% auto;
+  background-color: white;
+  margin: 5% auto;
   padding: 20px;
-  width: 70%;
+  width: 95%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
   position: relative;
+  font-family: $body-font;
+  font-size: 13px;
 }
 
 .close {
@@ -82,13 +91,13 @@
 
 /* Style for the "more" button */
 #moreButton {
-  background-color: #007bff;
-  color: #fff;
+  background-color: transparent;
+  color: $dark-blue;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
 }
 
 #moreButton:hover {
-  background-color: #0056b3;
+  // background-color: #0056b3;
 }
