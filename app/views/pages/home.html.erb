@@ -3,187 +3,193 @@
 <div class="banner-video" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1648638810931-60d2d55d052e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80);">
   <div class="banner-content">
     <%= image_tag image_url("PhysiOsteos_Logo_B.png"), style: "width: 750px;"%>
-    <p><strong>Réservez votre consultation dès maintenant !</strong></p>
+    <%# <p><strong>Réservez votre consultation dès maintenant !</strong></p> %>
     <%= link_to "Vers nos services!", "#", class: "btn-flat scroll-button1", style: "text-decoration: none;", data: { target: "target-services-section" } %>
   </div>
 </div>
 
+<%# CONTAINER FOR BACKGROUND %>
+<div class="background-color-container">
 
-<%# CONTAINER "NOS SERVICES" %>
-<div class="nos-services", id="target-services-section">
-  <h1>NOS SERVICES</h1>
-  <div class="nos-services-content">
-    <div class="kine">
+  <%# CONTAINER "NOS SERVICES" %>
+  <div class="nos-services", id="target-services-section">
+    <h1>NOS SERVICES</h1>
+    <div class="nos-services-content">
+      <div class="kine">
 
-      <h1>Kinésithérapie</h1>
-      <div class="kine-osteo-content">
-        <p>
-          La kinésithérapie est une discipline médicale qui utilise des techniques manuelles et des exercices pour rééduquer, prévenir et traiter les problèmes physiques. Elle est utilisée pour diverses conditions médicales, notamment pour la réadaptation post-opératoire, les douleurs physiques, l’amélioration de la mobilité et la qualité de vie. Les kinésithérapeutes travaillent en étroite collaboration avec les patients pour développer des plans de traitement personnalisés.
-        </p>
-        <a href="#" class="btn-flat scroll-button2" style="text-decoration: none;" data-target="target-equipe-section">Vers l'équipe!</a>      </div>
-    </div>
-    <div class="osteo">
-      <h1>Ostéo-étiopathie</h1>
-      <div class="kine-osteo-content">
-        <p>
-          L'ostéo-étiopathie est une approche médicale alternative axée sur la recherche et le traitement des causes profondes des troubles de santé, principalement les douleurs et raideurs physiques et les dysfonctionnements viscéraux. Elle se base sur l'idée que de petites dysfonctions dans les tissus corporels peuvent provoquer des problèmes de santé en perturbant divers processus physiologiques. Les ostéo-étiopathes effectuent des bilans approfondis pour identifier les déséquilibres puis un traitement comprenant des techniques de manipulation visant à rétablir la mobilité articulaire et tissulaire pour favoriser la guérison, en considérant le corps comme un système interconnecté.
-        </p>
-        <a href="#" class="btn-flat scroll-button2" style="text-decoration: none;" data-target="target-equipe-section">Vers l'équipe!</a>      </div>
+        <h1>Kinésithérapie</h1>
+        <div class="kine-osteo-content">
+          <p>
+            La kinésithérapie est une discipline médicale qui utilise des techniques manuelles et des exercices pour rééduquer, prévenir et traiter les problèmes physiques. Elle est utilisée pour diverses conditions médicales, notamment pour la réadaptation post-opératoire, les douleurs physiques, l’amélioration de la mobilité et la qualité de vie. Les kinésithérapeutes travaillent en étroite collaboration avec les patients pour développer des plans de traitement personnalisés.
+          </p>
+          <a href="#" class="btn-flat scroll-button2" style="text-decoration: none;" data-target="target-equipe-section">Vers l'équipe!</a>
+        </div>
+      </div>
+      <div class="osteo">
+        <h1>Ostéo-étiopathie</h1>
+        <div class="kine-osteo-content">
+          <p>
+            L'ostéo-étiopathie est une approche médicale alternative axée sur la recherche et le traitement des causes profondes des troubles de santé, principalement les douleurs et raideurs physiques et les dysfonctionnements viscéraux. Elle se base sur l'idée que de petites dysfonctions dans les tissus corporels peuvent provoquer des problèmes de santé en perturbant divers processus physiologiques. Les ostéo-étiopathes effectuent des bilans approfondis pour identifier les déséquilibres puis un traitement comprenant des techniques de manipulation visant à rétablir la mobilité articulaire et tissulaire pour favoriser la guérison, en considérant le corps comme un système interconnecté.
+          </p>
+          <a href="#" class="btn-flat scroll-button2" style="text-decoration: none;" data-target="target-equipe-section">Vers l'équipe!</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<%# CONTAINER "NOTRE EQUIPE" %>
+  <%# CONTAINER "NOTRE EQUIPE" %>
+  <div class="equipe", id="target-equipe-section">
+    <h1>NOTRE EQUIPE</h1>
+    <div class="equipe-all-members">
 
-<div class="equipe", id="target-equipe-section">
-  <h1>NOTRE EQUIPE</h1>
-  <div class="equipe-all-members">
 
-<%# MEMBRE 1 %>
-    <div class="membre">
-      <div class="profile-pic-membre">
-        <%= image_tag image_url("cedric_profile.jpg") , class: "avatar-equipe"%>
-      </div>
-      <div class="membre-content">
-        <div class="membre-content-titre">
-          <h3>Cedric Arend</h3>
-          <h3>Kinésithérapeute & ostéo-éthiopathe D.Oe.</h3>
+      <%# MEMBRE 1 %>
+      <div class="membre">
+        <div class="profile-pic-membre">
+          <%= image_tag image_url("cedric_profile.jpg") , class: "avatar-equipe"%>
         </div>
-        <div class="membre-content-description">
-          <p id="partialText1">
-            « Ma ligne de conduite dans la prise en charge de patients est la parfaite connaissance de l’anatomie et de la physiologie du corps humain.
-          </p>
-          <button id="moreButton1" class="moreButton">Lire la suite</button>
-          <%= link_to "Prendre RDV", "#", class: "btn-small scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
-        </div>
-        <!-- The hidden pop-up div -->
-        <div id="popup1" class="popup">
-          <div class="popup-content">
-            <span class="close" id="closePopup1">&times;</span>
-            <p id="fullText1">
-              « Ma ligne de conduite dans la prise en charge de patients est la parfaite connaissance de l’anatomie et de la physiologie du corps humain. En ajoutant à cela le concepts les plus efficaces de kinésithérapie, de thérapie manuelle et d’ostéo-étiopathie, mes soins ne laissent rien au hasard. J’accorde une importance primordiale à l’encadrement de mes patients par des conseils personnalisés. Diverses formations et pratiques sportives, notamment du football au niveau professionnel, les arts-martiaux, l’apnée et le yoga, me donnent un large répertoire d’outils à utiliser lors de mes séances. Mon but est de trouver le chemin vers la guérison le plus adapté et le plus sécurisé pour mes patients. »
-             </p>
+        <div class="membre-content">
+          <div class="membre-content-titre">
+            <h3>Cedric Arend</h3>
+            <h3>Kinésithérapeute & ostéo-éthiopathe D.Oe.</h3>
+          </div>
+          <div class="membre-content-description">
+            <p id="partialText1">
+              « Ma ligne de conduite dans la prise en charge de patients est la parfaite connaissance de l’anatomie et de la physiologie du corps humain.
+            </p>
+            <button id="moreButton1" class="moreButton">Lire la suite</button>
+            <%= link_to "Prendre RDV", "#", class: "btn-small scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
+          </div>
+          <!-- The hidden pop-up div -->
+          <div id="popup1" class="popup">
+            <div class="popup-content">
+              <span class="close" id="closePopup1">&times;</span>
+              <p id="fullText1">
+                « Ma ligne de conduite dans la prise en charge de patients est la parfaite connaissance de l’anatomie et de la physiologie du corps humain. En ajoutant à cela le concepts les plus efficaces de kinésithérapie, de thérapie manuelle et d’ostéo-étiopathie, mes soins ne laissent rien au hasard. J’accorde une importance primordiale à l’encadrement de mes patients par des conseils personnalisés. Diverses formations et pratiques sportives, notamment du football au niveau professionnel, les arts-martiaux, l’apnée et le yoga, me donnent un large répertoire d’outils à utiliser lors de mes séances. Mon but est de trouver le chemin vers la guérison le plus adapté et le plus sécurisé pour mes patients. »
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
 
-<%# MEMBRE 2 %>
-    <div class="membre">
-      <div class="profile-pic-membre">
-        <%= image_tag image_url("pascal_profile.jpg") , class: "avatar-equipe"%>
-      </div>
-      <div class="membre-content">
-        <div class="membre-content-titre">
-          <h3>Pascal Vigneron</h3>
-          <h3>Kinésithérapeute & ostéo-éthiopathe D.Oe.</h3>
+      <%# MEMBRE 2 %>
+      <div class="membre">
+        <div class="profile-pic-membre">
+          <%= image_tag image_url("pascal_profile.jpg") , class: "avatar-equipe"%>
         </div>
-        <div class="membre-content-description">
-          <p id="partialText2">
-            « Ma philosophie de travail repose sur une approche holistique qui considère l'individu dans sa totalité, en intégrant le corps et l'esprit.
-          </p>
-          <button id="moreButton2" class="moreButton">Lire la suite</button>
-          <%= link_to "Prendre RDV", "#", class: "btn-small scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
-        </div>
-        <!-- The hidden pop-up div -->
-        <div id="popup2" class="popup">
-          <div class="popup-content">
-            <span class="close" id="closePopup2">&times;</span>
-            <p id="fullText2">
-              « Ma philosophie de travail repose sur une approche holistique qui considère l'individu dans sa totalité, en intégrant le corps et l'esprit. De nombreux problèmes physiques trouvent leur origine dans des blocages énergétiques, et que notre bien-être dépend de multiples facteurs internes et externes. Grâce à des outils puissants acquis en étudiant la kinésithérapie, l’ostéo-étiopathie, la médecine chinoise, ainsi que grâce à ma pratique des arts martiaux et du Qi Gong, j'accompagne mes patients en personnalisant leurs traitements pour les aider à atteindre leurs objectifs de santé. Mon expérience internationale en tant que champion du monde en arts martiaux me permet également d'aider les sportifs de haut niveau, ainsi que de traiter une variété de pathologies, qu'elles soient légères ou plus complexes. Mon objectif ultime est d'accompagner chaque patient jusqu'à la ligne d'arrivée de leur parcours de guérison. »
-             </p>
+        <div class="membre-content">
+          <div class="membre-content-titre">
+            <h3>Pascal Vigneron</h3>
+            <h3>Kinésithérapeute & ostéo-éthiopathe D.Oe.</h3>
+          </div>
+          <div class="membre-content-description">
+            <p id="partialText2">
+              « Ma philosophie de travail repose sur une approche holistique qui considère l'individu dans sa totalité, en intégrant le corps et l'esprit.
+            </p>
+            <button id="moreButton2" class="moreButton">Lire la suite</button>
+            <%= link_to "Prendre RDV", "#", class: "btn-small scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
+          </div>
+          <!-- The hidden pop-up div -->
+          <div id="popup2" class="popup">
+            <div class="popup-content">
+              <span class="close" id="closePopup2">&times;</span>
+              <p id="fullText2">
+                « Ma philosophie de travail repose sur une approche holistique qui considère l'individu dans sa totalité, en intégrant le corps et l'esprit. De nombreux problèmes physiques trouvent leur origine dans des blocages énergétiques, et que notre bien-être dépend de multiples facteurs internes et externes. Grâce à des outils puissants acquis en étudiant la kinésithérapie, l’ostéo-étiopathie, la médecine chinoise, ainsi que grâce à ma pratique des arts martiaux et du Qi Gong, j'accompagne mes patients en personnalisant leurs traitements pour les aider à atteindre leurs objectifs de santé. Mon expérience internationale en tant que champion du monde en arts martiaux me permet également d'aider les sportifs de haut niveau, ainsi que de traiter une variété de pathologies, qu'elles soient légères ou plus complexes. Mon objectif ultime est d'accompagner chaque patient jusqu'à la ligne d'arrivée de leur parcours de guérison. »
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
 
-<%# MEMBRE 3 %>
-    <div class="membre">
-      <div class="profile-pic-membre">
-        <%= image_tag image_url("job_profile.jpg") , class: "avatar-equipe"%>
-      </div>
-      <div class="membre-content">
-        <div class="membre-content-titre">
-          <h3>Job Mabanga</h3>
-          <h3>Kinésithérapeute & ostéo-éthiopathe D.Oe.</h3>
+      <%# MEMBRE 3 %>
+      <div class="membre">
+        <div class="profile-pic-membre">
+          <%= image_tag image_url("job_profile.jpg") , class: "avatar-equipe"%>
         </div>
-        <div class="membre-content-description">
-          <p id="partialText3">
-            « Bonjour, je suis un master en kinésithérapie et ostéo-étiopathe très dynamique qui a à cœur de vous aider à mener une vie active et sans douleur.
-          </p>
-          <button id="moreButton3" class="moreButton">Lire la suite</button>
-          <%= link_to "Prendre RDV", "#", class: "btn-small scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
-        </div>
-        <!-- The hidden pop-up div -->
-        <div id="popup3" class="popup">
-          <div class="popup-content">
-            <span class="close" id="closePopup3">&times;</span>
-            <p id="fullText3">
-              « Bonjour, je suis un master en kinésithérapie et ostéo-étiopathe très dynamique qui a à cœur de vous aider à mener une vie active et sans douleur. Je suis formé et spécialisé pour prendre en charge tout type de douleur, grâce à des outils puissants prenant en compte le corps et l’esprit dans sa globalité (crânien, viscéral, énergétique et structurel). Pratiquant moi-même de nombreuses activités sportives de haut niveau (fitness, danse, course à pied, ceinture noire en arts-martiaux), je me suis spécialisé dans la rééducation et la réathlétisation des blessures sportives. Mon objectif est de vous fournir des soins personnalisés adaptés à vos besoins uniques. Mon objectif est de vous apporter une expertise ciblée à votre pathologie pour un traitement efficace ou pour vous permettre d’atteindre votre plein potentiel physique. »
-             </p>
+        <div class="membre-content">
+          <div class="membre-content-titre">
+            <h3>Job Mabanga</h3>
+            <h3>Kinésithérapeute & ostéo-éthiopathe D.Oe.</h3>
+          </div>
+          <div class="membre-content-description">
+            <p id="partialText3">
+              « Bonjour, je suis un master en kinésithérapie et ostéo-étiopathe très dynamique qui a à cœur de vous aider à mener une vie active et sans douleur.
+            </p>
+            <button id="moreButton3" class="moreButton">Lire la suite</button>
+            <%= link_to "Prendre RDV", "#", class: "btn-small scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
+          </div>
+          <!-- The hidden pop-up div -->
+          <div id="popup3" class="popup">
+            <div class="popup-content">
+              <span class="close" id="closePopup3">&times;</span>
+              <p id="fullText3">
+                « Bonjour, je suis un master en kinésithérapie et ostéo-étiopathe très dynamique qui a à cœur de vous aider à mener une vie active et sans douleur. Je suis formé et spécialisé pour prendre en charge tout type de douleur, grâce à des outils puissants prenant en compte le corps et l’esprit dans sa globalité (crânien, viscéral, énergétique et structurel). Pratiquant moi-même de nombreuses activités sportives de haut niveau (fitness, danse, course à pied, ceinture noire en arts-martiaux), je me suis spécialisé dans la rééducation et la réathlétisation des blessures sportives. Mon objectif est de vous fournir des soins personnalisés adaptés à vos besoins uniques. Mon objectif est de vous apporter une expertise ciblée à votre pathologie pour un traitement efficace ou pour vous permettre d’atteindre votre plein potentiel physique. »
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
 
-<%# MEMBRE 4 %>
-    <div class="membre">
-      <div class="profile-pic-membre">
-        <%= image_tag image_url("rinor_profile.jpg") , class: "avatar-equipe"%>
-      </div>
-      <div class="membre-content">
-        <div class="membre-content-titre">
-          <h3>Rinor Aziri</h3>
-          <h3>Kinésithérapeute & ostéo-éthiopathe D.Oe.</h3>
+      <%# MEMBRE 4 %>
+      <div class="membre">
+        <div class="profile-pic-membre">
+          <%= image_tag image_url("rinor_profile.jpg") , class: "avatar-equipe"%>
         </div>
-        <div class="membre-content-description">
-          <p id="partialText4">
-            « Ma ligne de conduite dans la prise en charge de patients est la parfaite connaissance de l’anatomie et de la physiologie du corps humain.
-          </p>
-          <button id="moreButton4" class="moreButton">Lire la suite</button>
-          <%= link_to "Prendre RDV", "#", class: "btn-small scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
-        </div>
-        <!-- The hidden pop-up div -->
-        <div id="popup4" class="popup">
-          <div class="popup-content">
-            <span class="close" id="closePopup4">&times;</span>
-            <p id="fullText4">
-              « Ma ligne de conduite dans la prise en charge de patients est la parfaite connaissance de l’anatomie et de la physiologie du corps humain. En ajoutant à cela le concepts les plus efficaces de kinésithérapie, de thérapie manuelle et d’ostéo-étiopathie, mes soins ne laissent rien au hasard. J’accorde une importance primordiale à l’encadrement de mes patients par des conseils personnalisés. Diverses formations et pratiques sportives, notamment du football au niveau professionnel, les arts-martiaux, l’apnée et le yoga, me donnent un large répertoire d’outils à utiliser lors de mes séances. Mon but est de trouver le chemin vers la guérison le plus adapté et le plus sécurisé pour mes patients. »
-             </p>
+        <div class="membre-content">
+          <div class="membre-content-titre">
+            <h3>Rinor Aziri</h3>
+            <h3>Kinésithérapeute & ostéo-éthiopathe D.Oe.</h3>
+          </div>
+          <div class="membre-content-description">
+            <p id="partialText4">
+              « Ma ligne de conduite dans la prise en charge de patients est la parfaite connaissance de l’anatomie et de la physiologie du corps humain.
+            </p>
+            <button id="moreButton4" class="moreButton">Lire la suite</button>
+            <%= link_to "Prendre RDV", "#", class: "btn-small scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
+          </div>
+          <!-- The hidden pop-up div -->
+          <div id="popup4" class="popup">
+            <div class="popup-content">
+              <span class="close" id="closePopup4">&times;</span>
+              <p id="fullText4">
+                « Ma ligne de conduite dans la prise en charge de patients est la parfaite connaissance de l’anatomie et de la physiologie du corps humain. En ajoutant à cela le concepts les plus efficaces de kinésithérapie, de thérapie manuelle et d’ostéo-étiopathie, mes soins ne laissent rien au hasard. J’accorde une importance primordiale à l’encadrement de mes patients par des conseils personnalisés. Diverses formations et pratiques sportives, notamment du football au niveau professionnel, les arts-martiaux, l’apnée et le yoga, me donnent un large répertoire d’outils à utiliser lors de mes séances. Mon but est de trouver le chemin vers la guérison le plus adapté et le plus sécurisé pour mes patients. »
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-</div>
 
-
-<%# CONTAINER "CONTACT" %>
-
-<div class="div-contact", id="target-contact-section">
-  <h1>COMMENT NOUS CONTACTER ?</h1>
-  <div class="div-contact-content">
-    <div class="infos-contact">
-      <h2>Nos coordonnées</h2>
-      <br>
-      <p><i class="fa-solid fa-clock"></i> 9h - 18h (Lundi - Vendredi)</p>
-      <p><i class="fa-solid fa-house"></i> Chaussée de Liège 322 b, 5100 Jambes</p>
-      <p><i class="fa-solid fa-phone"></i> +32 81 00 00 00</p>
-      <p><i class="fa-solid fa-envelope"></i></i> info@physiosteos.com</p>
-      <div class="footer-links">
-        <a href="https://www.instagram.com/physiosteos_nam.lux/?hl=en"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=61551247089088"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://maps.app.goo.gl/ZcJPfy4vVPVqTh116" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
-      </div>
-    </div>
-      <%= image_tag image_url("map.png"), style: "width: 500px;" %>
     </div>
   </div>
+
+
+  <%# CONTAINER "CONTACT" %>
+  <div class="div-contact", id="target-contact-section">
+    <h1>COMMENT NOUS CONTACTER ?</h1>
+    <div class="div-contact-content">
+      <div class="infos-contact">
+        <h2>Nos coordonnées</h2>
+        <br>
+        <p><i class="fa-solid fa-clock"></i> 9h - 18h (Lundi - Vendredi)</p>
+        <p><i class="fa-solid fa-house"></i> Chaussée de Liège 322 b, 5100 Jambes</p>
+        <p><i class="fa-solid fa-phone"></i> +32 81 00 00 00</p>
+        <p><i class="fa-solid fa-envelope"></i></i> info@physiosteos.com</p>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/physiosteos_nam.lux/?hl=en"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61551247089088"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://maps.app.goo.gl/ZcJPfy4vVPVqTh116" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a>
+        </div>
+      </div>
+        <%= image_tag image_url("map.png"), style: "width: 500px;" %>
+    </div>
+  </div>
+
 </div>
+
 
 
 <%# JAVASCRIPT %>
