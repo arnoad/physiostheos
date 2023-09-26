@@ -1,12 +1,9 @@
-.nos-services {
-  // background: transparent linear-gradient(198deg, #54BAB9 0%, #2E4986 100%) 0% 0% no-repeat padding-box;
-}
-
 .nos-services h1 {
  color: $mint-cream;
  text-align: center;
  padding-top: 100px;
-
+ font-weight: 400;
+ font-size: 52px;
 }
 
 .nos-services-content {
@@ -15,44 +12,31 @@
   flex-direction: row; /* Split into two columns */
 }
 
-.kine,
-.osteo {
+.service-cards {
+  display: flex; /* Use flexbox for column content */
   flex: 1; /* Make both columns equally sized */
-  margin: 85px; /* Add some padding for spacing */
+  flex-direction: column; /* Stack content vertically */
+  margin: 20px; /* Add some padding for spacing */
   margin-top: 35px;
   padding: 50px;
   overflow: auto; /* Add scrollbars if content overflows */
-  display: flex; /* Use flexbox for column content */
-  flex-direction: column; /* Stack content vertically */
   align-items: center; /* Center content vertically */
   color: $mint-cream;
-  background: transparent 0% 0% no-repeat padding-box;
+  background: #79cbcaa4;
   box-shadow: 0px 3px 40px #0000003C;
   border-radius: 25px;
-  opacity: 1;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
 }
 
-.kine {
-  margin-right: 20px;
-}
-
-.osteo {
-  margin-left: 20px;
-}
-
-.kine h1,
-.osteo h1 {
+.service-cards h1 {
   align-items: center;
   font-family: $headers-font;
   color: $mint-cream;
   padding-top: 0px;
   padding-bottom: 15px;
+  font-size: 36px;
 }
 
-.kine p,
-.osteo p {
+.service-cards p {
   text-align: justify;
 }
 
