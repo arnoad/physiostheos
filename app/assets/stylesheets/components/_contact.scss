@@ -1,11 +1,11 @@
 .div-contact h1 {
-  color: $dark-blue;
+  color: $mint-cream;
   font-weight: 200;
   font-size: 52px;
   justify-content: center;
   display: flex;
   margin-bottom: 40px;
-  margin-top: 100px;
+  margin-top: 150px;
   top: 20px;
   position: relative;
 }
@@ -21,8 +21,11 @@
 }
 
 .div-contact img {
-  border-radius: 10px;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  box-shadow: 0px 3px 40px #32578C88;
+  height: 409px;
+  width: 656px;
+  object-fit:cover;
 }
 
 .infos-contact p i {
@@ -37,5 +40,6 @@
 .infos-contact {
   padding: 30px;
   padding-top: 100px;
-  font-size: 16px;
+  font-size: 18px;
+  color: $mint-cream;
 }
