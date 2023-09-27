@@ -5,10 +5,10 @@ html, body {
 }
 
 .footer-wrapper {
-  background: #F4F4F4;
+  background: $turquoise;
   height: 60px; /* Set the desired height for your footer */
   padding: 0 50px;
-  color: rgba(0, 0, 0, 0.3);
+  color: $eerie-black;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,14 +25,26 @@ html, body {
   color: $mint-cream;
   // opacity: 0.3;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 22px;
   padding: 0px 10px;
-  transition: 0.3s;
+  transition: 0.5s;
+  position: relative;
+  top: -7px;
+  border-radius: 50px;
+
+}
+
+.footer-links p {
+  color: $mint-cream;
+  font-size: 18px;
 }
 
 .footer-links a:hover {
   opacity: 1;
-  color: #757575;
+  // color: #757575;
+  // box-shadow: 5px 5px 10px #ffffff;
+  background-color: #54bab89d;
+  border-radius: 50px;
 }
 
 .footer-wrapper .fa-heart {

@@ -1,0 +1,25 @@
+.profile-card {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.popup-avatar {
+  width: 212px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 22px;
+}
+
+.popup-title-container h1 {
+  color: $eerie-black;
+  font-size: 54px;
+  margin: 37px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-contact {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
