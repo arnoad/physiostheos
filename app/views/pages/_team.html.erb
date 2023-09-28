@@ -8,8 +8,8 @@
         <div class="profile-pic-membre">
           <%= image_tag image_url("cedric_profile.jpg"), class: "avatar-equipe"%>
         </div>
-        <div class="membre-content-titre">
-          <h3>Cedric Arend</h3>
+        <div class="membre-content-titre" style="text-align: center;">
+          <h3 >Cedric Arend</h3>
           <h4>Kinésithérapeute & Ostéo-éthiopathe D.Oe.</h4>
         </div>
         <div class="membre-content-description">
@@ -33,27 +33,25 @@
       <%# MEMBRE 2 %>
       <div class="membre">
         <div class="profile-pic-membre">
-          <%= image_tag image_url("pascal_profile.jpg") , class: "avatar-equipe"%>
+          <%= image_tag image_url("pascal_profile.jpg"), class: "avatar-equipe"%>
         </div>
-        <div class="membre-content">
-          <div class="membre-content-titre">
-            <h3>Pascal Vigneron</h3>
-            <h4>Kinésithérapeute & Ostéo-éthiopathe D.Oe.</h4>
-          </div>
-          <div class="membre-content-description">
-            <p id="partialText2">
-              « Ma philosophie de travail repose sur une approche holistique qui considère l'individu dans sa totalité, en intégrant le corps et l'esprit...»
-            </p>
-            <button id="moreButton2" class="btn-small" style="text-decoration: none; border: 0px;">Prendre rendez-vous</button>
-            <%# <button id="moreButton2" class="moreButton">Lire la suite</button> %>
-            <%#= link_to "Prendre RDV", "#", class: "btn-small scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
-          </div>
-          <!-- The hidden pop-up div -->
-          <div id="popup2" class="popup">
-            <div class="popup-content">
-              <span class="close" id="closePopup2">&times;</span>
-              <%= render "pages/team_popup/pascal" %>
-            </div>
+        <div class="membre-content-titre">
+          <h3>Pascal Vigneron</h3>
+          <h4>Kinésithérapeute & Ostéo-éthiopathe D.Oe.</h4>
+        </div>
+        <div class="membre-content-description">
+          <p id="partialText2">
+            « Ma philosophie de travail repose sur une approche holistique qui considère l'individu dans sa totalité, en intégrant le corps et l'esprit...»
+          </p>
+          <button id="moreButton2" class="btn-small" style="text-decoration: none; border: 0px;">Prendre rendez-vous</button>
+          <%# <button id="moreButton2" class="moreButton">Lire la suite</button> %>
+          <%#= link_to "Prendre RDV", "#", class: "btn-small scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
+        </div>
+        <!-- The hidden pop-up div -->
+        <div id="popup2" class="popup">
+          <div class="popup-content">
+            <span class="close" id="closePopup2">&times;</span>
+            <%= render "pages/team_popup/pascal" %>
           </div>
         </div>
       </div>
@@ -64,25 +62,23 @@
         <div class="profile-pic-membre">
           <%= image_tag image_url("job_profile.jpg") , class: "avatar-equipe"%>
         </div>
-        <div class="membre-content">
-          <div class="membre-content-titre">
-            <h3>Job Mabanga</h3>
-            <h4>Kinésithérapeute & Ostéo-éthiopathe D.Oe.</h4>
-          </div>
-          <div class="membre-content-description">
-            <p id="partialText3">
-              « Bonjour, je suis un master en kinésithérapie et ostéo-étiopathe très dynamique qui a à cœur de vous aider à mener une vie active et sans douleur...»
-            </p>
-            <button id="moreButton3" class="btn-small" style="text-decoration: none; border: 0px;">Prendre rendez-vous</button>
-            <%# <button id="moreButton3" class="moreButton">Lire la suite</button> %>
-            <%#= link_to "Prendre RDV", "#", class: "btn-small scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
-          </div>
-          <!-- The hidden pop-up div -->
-          <div id="popup3" class="popup">
-            <div class="popup-content">
-              <span class="close" id="closePopup3">&times;</span>
-              <%= render "pages/team_popup/job" %>
-            </div>
+        <div class="membre-content-titre">
+          <h3>Job Mabanga</h3>
+          <h4>Kinésithérapeute & Ostéo-éthiopathe D.Oe.</h4>
+        </div>
+        <div class="membre-content-description">
+          <p id="partialText3">
+            « Bonjour, je suis un master en kinésithérapie et ostéo-étiopathe très dynamique qui a à cœur de vous aider à mener une vie active et sans douleur...»
+          </p>
+          <button id="moreButton3" class="btn-small" style="text-decoration: none; border: 0px;">Prendre rendez-vous</button>
+          <%# <button id="moreButton3" class="moreButton">Lire la suite</button> %>
+          <%#= link_to "Prendre RDV", "#", class: "btn-small scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
+        </div>
+        <!-- The hidden pop-up div -->
+        <div id="popup3" class="popup">
+          <div class="popup-content">
+            <span class="close" id="closePopup3">&times;</span>
+            <%= render "pages/team_popup/job" %>
           </div>
         </div>
       </div>
@@ -93,25 +89,23 @@
         <div class="profile-pic-membre">
           <%= image_tag image_url("rinor_profile.jpg") , class: "avatar-equipe"%>
         </div>
-        <div class="membre-content">
-          <div class="membre-content-titre">
-            <h3>Rinor Aziri</h3>
-            <h4>Kinésithérapeute spéc. en thérapie manuelle analytique</h4>
-          </div>
-          <div class="membre-content-description">
-            <p id="partialText4">
-              « Le sport a toujours occupé une place prépondérante dans mon existence, constituant l'un des principaux facteurs qui ont orienté mon choix vers la poursuite...»
-            </p>
-            <button id="moreButton4" class="btn-small" style="text-decoration: none; border: 0px;">Prendre rendez-vous</button>
-            <%# <button id="moreButton4" class="moreButton">Lire la suite</button> %>
-            <%#= link_to "Prendre RDV", "#", class: "btn-small scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
-          </div>
-          <!-- The hidden pop-up div -->
-          <div id="popup4" class="popup">
-            <div class="popup-content">
-              <span class="close" id="closePopup4">&times;</span>
-              <%= render "pages/team_popup/rinor" %>
-            </div>
+        <div class="membre-content-titre">
+          <h3>Rinor Aziri</h3>
+          <h4>Kinésithérapeute spéc. en thérapie manuelle analytique</h4>
+        </div>
+        <div class="membre-content-description">
+          <p id="partialText4">
+            « Le sport a toujours occupé une place prépondérante dans mon existence, constituant l'un des principaux facteurs qui ont orienté mon choix vers la poursuite...»
+          </p>
+          <button id="moreButton4" class="btn-small" style="text-decoration: none; border: 0px;">Prendre rendez-vous</button>
+          <%# <button id="moreButton4" class="moreButton">Lire la suite</button> %>
+          <%#= link_to "Prendre RDV", "#", class: "btn-small scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
+        </div>
+        <!-- The hidden pop-up div -->
+        <div id="popup4" class="popup">
+          <div class="popup-content">
+            <span class="close" id="closePopup4">&times;</span>
+            <%= render "pages/team_popup/rinor" %>
           </div>
         </div>
       </div>
@@ -122,25 +116,23 @@
         <div class="profile-pic-membre">
           <%= image_tag image_url("muriel_profile.jpg") , class: "avatar-equipe"%>
         </div>
-        <div class="membre-content">
-          <div class="membre-content-titre">
-            <h3>Muriel Bully</h3>
-            <h4>Kinésitherapeute spéc. en uro-gynécologie & Sexologue</h4>
-          </div>
-          <div class="membre-content-description">
-            <p id="partialText5">
-              « Les relations humaines, le fonctionnement du corps humain tant sur l’aspect physique, émotionnel que psychologique...»
-            </p>
-            <button id="moreButton5" class="btn-small" style="text-decoration: none; border: 0px;">Prendre rendez-vous</button>
-            <%# <button id="moreButton5" class="moreButton">Lire la suite</button> %>
-            <%#= link_to "Prendre RDV", "#", class: "btn-small scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
-          </div>
-          <!-- The hidden pop-up div -->
-          <div id="popup5" class="popup">
-            <div class="popup-content">
-              <span class="close" id="closePopup5">&times;</span>
-              <%= render "pages/team_popup/muriel" %>
-            </div>
+        <div class="membre-content-titre">
+          <h3>Muriel Bully</h3>
+          <h4>Kinésitherapeute spéc. en uro-gynécologie & Sexologue</h4>
+        </div>
+        <div class="membre-content-description">
+          <p id="partialText5">
+            « Les relations humaines, le fonctionnement du corps humain tant sur l’aspect physique, émotionnel que psychologique et mental sont des passions que...»
+          </p>
+          <button id="moreButton5" class="btn-small" style="text-decoration: none; border: 0px;">Prendre rendez-vous</button>
+          <%# <button id="moreButton5" class="moreButton">Lire la suite</button> %>
+          <%#= link_to "Prendre RDV", "#", class: "btn-small scroll-button3", style: "text-decoration: none;", data: { target: "target-contact-section" } %>
+        </div>
+        <!-- The hidden pop-up div -->
+        <div id="popup5" class="popup">
+          <div class="popup-content">
+            <span class="close" id="closePopup5">&times;</span>
+            <%= render "pages/team_popup/muriel" %>
           </div>
         </div>
       </div>
