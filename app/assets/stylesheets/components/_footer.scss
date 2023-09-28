@@ -16,12 +16,12 @@ html, body {
 }
 
 /* Your existing footer styles */
-.footer-links {
+.contact-links {
   display: flex;
   align-items: center;
 }
 
-.footer-links a {
+.contact-links a {
   color: $mint-cream;
   // opacity: 0.3;
   text-decoration: none;
@@ -34,12 +34,12 @@ html, body {
 
 }
 
-.footer-links p {
+.contact-links p {
   color: $mint-cream;
   font-size: 18px;
 }
 
-.footer-links a:hover {
+.contact-links a:hover {
   opacity: 1;
   // color: $turquoise;
   // box-shadow: 5px 5px 10px #ffffff;
@@ -50,4 +50,21 @@ html, body {
 
 .footer-wrapper .fa-heart {
   color: #D23333;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .footer-links {
+    display: none;
+  }
 }
