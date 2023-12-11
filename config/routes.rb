@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   get "pages/about"
-
+  get "/pascalvigneron", to: "pages#pascalvigneron"
+  get "/cedricarend", to: "pages#cedricarend"
   resources :physios, only: %i[index show]
   resources :rdvs, only: %i[index show new create]
 end

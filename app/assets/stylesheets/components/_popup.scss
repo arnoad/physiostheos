@@ -28,6 +28,12 @@
   font-style: italic;
 }
 
+.popup-address {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
 

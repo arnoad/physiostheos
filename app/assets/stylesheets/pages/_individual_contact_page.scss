@@ -1,0 +1,33 @@
+.profile-card-box {
+  padding: 200px 250px;
+  // background-color: $turquoise;
+  background: transparent linear-gradient(198deg, #54BAB9 0%, #2E4986 100%) 0% 0% no-repeat padding-box;
+}
+
+.contact-card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 8px;
+
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .popup-avatar {
+    display: none;
+  }
+  .profile-card-box {
+    padding: 10px;
+    // background-color: white;
+  }
+}
