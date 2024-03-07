@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "pages/about"
   get "/pascalvigneron", to: "pages#pascalvigneron"
   get "/cedricarend", to: "pages#cedricarend"
+  get "/rinoraziri", to: "pages#rinoraziri"
   resources :physios, only: %i[index show]
   resources :rdvs, only: %i[index show new create]
 end
